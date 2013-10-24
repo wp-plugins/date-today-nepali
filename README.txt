@@ -23,6 +23,7 @@ This plugin uses [Nepali-English Date conversion PHP class](http://nepalidatecon
 
 
 == Frequently Asked Questions ==
+Small plugin
 
 
 
