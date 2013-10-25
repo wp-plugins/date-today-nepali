@@ -36,7 +36,7 @@ This plugin uses [Nepali-English Date conversion PHP class](http://nepalidatecon
 == Frequently Asked Questions ==
 = There is something cool you could add... =
 
-Nice, make a post on the [Support Forum](http://wordpress.org/support/plugin/date-today-nepali) and let us know.
+Nice then, make a post on the [Support Forum](http://wordpress.org/support/plugin/date-today-nepali) and let us know.
 
 
 
