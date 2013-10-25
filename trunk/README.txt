@@ -1,7 +1,7 @@
 === Date Today Nepali ===
 Contributors: rabmalin
-Donate link: http://example.com/
-Tags: date, nepali, widget
+Donate link: http://www.nilambar.net/2013/10/date-today-nepali-wordpress-plugin.html
+Tags: nepali, date, widget, Bikram Sambat
 Requires at least: 3.5.1
 Tested up to: 3.6
 Stable tag: 1.0.0
@@ -18,12 +18,25 @@ This plugin uses [Nepali-English Date conversion PHP class](http://nepalidatecon
 
 == Installation ==
 
-1. Upload the date-today-nepali folder to the /wp-content/plugins/ directory.
-2. Activate the plugin via the 'Plugins' menu in WordPress.
+= Using The WordPress Dashboard =
 
+1. Navigate to the 'Add New' Plugin Dashboard
+1. Select 'date-today-nepali.zip' from your computer
+1. Install
+1. Activate the plugin on the WordPress Plugin Dashboard
+1. Place the '[DTN]Date Display Widget' Widget into a Widget area through the 'Appearance -> Widgets' menu in WordPress.
+
+= Using FTP =
+
+1. Extract 'date-today-nepali.zip' to your computer
+1. Upload the 'date-today-nepali' directory to your '/wp-content/plugins/' directory
+1. Activate the plugin on the WordPress Plugins dashboard
+1. Place the '[DTN]Date Display Widget' Widget into a Widget area through the 'Appearance -> Widgets' menu in WordPress.
 
 == Frequently Asked Questions ==
-Small plugin
+= There is something cool you could add...
+
+Nice, make a post on the [Support Forum](http://wordpress.org/support/plugin/date-today-nepali) and let us know.
 
 
 
