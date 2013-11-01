@@ -3,7 +3,7 @@ Contributors: rabmalin
 Donate link: http://www.nilambar.net/2013/10/date-today-nepali-wordpress-plugin.html
 Tags: nepali, date, widget,
 Requires at least: 3.5.1
-Tested up to: 3.6
+Tested up to: 3.7
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,11 +43,12 @@ Nice then, make a post on the [Support Forum](http://wordpress.org/support/plugi
 == Screenshots ==
 1. Date widget when Nepali language is used in Wordpress
 2. Another screenshot in English language
+3. Sample display of date in front end
 
 == Changelog ==
 
 = 1.0 =
-* New plugins developed
+* Initial commit
 
 
 
