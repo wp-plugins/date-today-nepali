@@ -3,8 +3,8 @@ Contributors: rabmalin
 Donate link: http://www.nilambar.net/2013/10/date-today-nepali-wordpress-plugin.html
 Tags: nepali, date, widget,
 Requires at least: 3.5.1
-Tested up to: 3.7
-Stable tag: 1.0.0
+Tested up to: 3.7.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,8 +48,11 @@ Nice, make a post on the [Support Forum](http://wordpress.org/support/plugin/dat
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * New plugins developed
+
+= 1.0.1 =
+* Minor bug fixes
 
 
 
