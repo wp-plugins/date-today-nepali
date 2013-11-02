@@ -123,9 +123,9 @@ class DTN_Widget extends WP_Widget
     function form($instance)
     {
         $title = isset($instance['title']) ? esc_attr($instance['title']) : '';
-        $display_language = $instance['display_language'];
-        $date_format = $instance['date_format'];
-        $date_separator = $instance['date_separator'];
+        $display_language = isset($instance['display_language']) ? esc_attr($instance['display_language']) : '';
+        $date_format = isset($instance['date_format']) ? esc_attr($instance['date_format']) : '';
+        $date_separator = isset($instance['date_separator']) ? esc_attr($instance['date_separator']) : '';
         ?>
 
         <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', $this->plugin_slug); ?></label>
