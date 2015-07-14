@@ -11,8 +11,8 @@
  * @wordpress-plugin
  * Plugin Name:       Date Today Nepali
  * Plugin URI:        http://www.nilambar.net/2013/10/date-today-nepali-wordpress-plugin.html
- * Description:       A small plugin to display Nepali date.
- * Version:           1.0.2
+ * Description:       A small widget plugin to display Nepali date.
+ * Version:           2.0.0
  * Author:            Nilambar Sharma
  * Author URI:        http://nilambar.net/
  * Text Domain:       date-today-nepali-locale
@@ -25,21 +25,28 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+// Define
+define( 'DATE_TODAY_NEPALI_NAME', 'Date Today Nepali' );
+define( 'DATE_TODAY_NEPALI_SLUG', 'date-today-nepali' );
+define( 'DATE_TODAY_NEPALI_VERSION', '2.0.0' );
+define( 'DATE_TODAY_NEPALI_BASENAME', basename( dirname( __FILE__ ) ) );
+define( 'DATE_TODAY_NEPALI_DIR', rtrim( plugin_dir_path( __FILE__ ), '/' ) );
+define( 'DATE_TODAY_NEPALI_URL', rtrim( plugin_dir_url( __FILE__ ), '/' ) );
+define( 'DATE_TODAY_NEPALI_LIB_DIR', DATE_TODAY_NEPALI_DIR . '/lib' );
+define( 'DATE_TODAY_NEPALI_CORE_DIR', DATE_TODAY_NEPALI_DIR . '/core' );
 
-require_once( plugin_dir_path( __FILE__ ) . 'class-date-today-nepali.php' );
+// Include core
+require_once( DATE_TODAY_NEPALI_CORE_DIR . '/init.php' );
 
-/*
- * Register hooks that are fired when the plugin is activated or deactivated.
- * When the plugin is deleted, the uninstall.php file is loaded.
+
+/**
+ * Load plugin textdomain.
  */
-register_activation_hook( __FILE__, array( 'Date_Today_Nepali', 'activate' ) );
-register_deactivation_hook( __FILE__, array( 'Date_Today_Nepali', 'deactivate' ) );
+function date_today_nepali_load_textdomain() {
 
-add_action( 'plugins_loaded', array( 'Date_Today_Nepali', 'get_instance' ) );
+  load_plugin_textdomain( 'date-today-nepali', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
-function load_date_today_nepali_widgets()
-{
-    include(plugin_dir_path( __FILE__ ) . "widgets/date-today-nepali.php");
-    register_widget('DTN_Widget');
 }
-add_action('widgets_init', 'load_date_today_nepali_widgets');
+
+add_action( 'plugins_loaded', 'date_today_nepali_load_textdomain' );
+
